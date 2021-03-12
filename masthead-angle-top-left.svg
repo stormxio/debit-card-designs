@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="560px" height="100px" viewBox="0 0 560 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CD59CFE9-0BA3-46C0-9914-85EF4C4728DC@3x</title>
+    <defs>
+        <polygon id="path-1" points="0 0 560 0 0 100"></polygon>
+    </defs>
+    <g id="Social" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="masthead-angle-top-left">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Rectangle" fill="#FF1AB0" xlink:href="#path-1"></use>
+            <polygon id="Rectangle" fill="#37E9C9" mask="url(#mask-2)" points="0 0 20 0 100 100 0 100"></polygon>
+        </g>
+    </g>
+</svg>
