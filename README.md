@@ -1,14 +1,15 @@
 # StormX Debit Card Design
 
 ## Requirements
-1. Design 5 debit cards according to [Visa's standards](https://partner.visa.com/site/explore/card-designer.html).
+1. Design 6 debit cards according to [Visa's standards](https://partner.visa.com/site/explore/card-designer.html).
 2. Design the cards according to US region standards. Use the card builder to get an idea of what the differences are. You can make it vertical or horizontal. Put the numbers on the front or back, etc.
 3. Each card should incorporate the corresponding membership badge. Files attached in this repo.
-  i. Bronze - Cobra
-  ii. Silver - Hawk
-  iii. Gold - Tiger
-  iv. Platinum - Hippo
-  v. Diamond - Whale
+  * Purple - Rabbit
+  * Bronze - Cobra
+  * Silver - Hawk
+  * Gold - Tiger
+  * Platinum - Hippo
+  * Diamond - Whale
 
 ## Submission
 1. Submit the raw file (adobe, sketch, etc.) used to overlay on Visa's card builder.
