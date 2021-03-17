@@ -24,6 +24,8 @@ We are focused on the mass adoption of crypto by helping people earn in crypto d
 2. Submit the downloadable file from Visa's card builder which incorporates your design.
 <img width="300" alt="Screen Shot 2021-03-12 at 11 15 01 AM" src="https://user-images.githubusercontent.com/5232184/110987637-3a977d80-8324-11eb-87ba-0b512a81bc6c.png">
 
+### We will have multiple bounties for artists to get rewarded. The community will then decide on which design should make it to production :) Probably via telegram/twitter sentiment OR another voting mechanism TBD.
+
 
 ## What do you get?
 1. $100 in DAI
