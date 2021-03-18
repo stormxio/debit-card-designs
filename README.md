@@ -6,6 +6,9 @@ StormX will be launching their first debit card which will allow users to earn C
 ## StormX Mission
 We are focused on the mass adoption of crypto by helping people earn in crypto doing things they are already used to doing. For example, playing games on their phone and shopping online. We believe this is the best way to approach mass adoption since buying crypto is still thought of as niche, risky and confusing. Wouldn't it be great if you could get rewarded for doing every day things?!
 
+## Appying For The Bounty
+Please submit a link to your digital artwork for us to review. This will help us make a selection of who should receive the bounty. There will be many people applying.
+
 ## Requirements
 1. Design 6 debit cards according to [Visa's standards](https://partner.visa.com/site/explore/card-designer.html).
 2. Design the cards according to US region standards. Use the card builder to get an idea of what the differences are. You can make it vertical or horizontal. Put the numbers on the front or back, etc.
