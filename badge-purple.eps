@@ -1,0 +1,1688 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%APL_DSC_Encoding: UTF8
+%APLProducer: (Version 11.3 (Build 20E5172i) Quartz PS Context)
+%%Title: (Unknown)
+%%Creator: (Unknown)
+%%CreationDate: (Unknown)
+%%For: (Unknown)
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox: 0 0 135 156
+%%EndComments
+%%BeginProlog
+%%BeginFile: cg-pdf.ps
+%%Copyright: Copyright 2000-2004 Apple Computer Incorporated.
+%%Copyright: All Rights Reserved.
+currentpacking true setpacking
+/cg_md 141 dict def
+cg_md begin
+/L3? languagelevel 3 ge def
+/bd{bind def}bind def
+/ld{load def}bd
+/xs{exch store}bd
+/xd{exch def}bd
+/cmmtx matrix def
+mark
+/sc/setcolor
+/scs/setcolorspace
+/dr/defineresource
+/fr/findresource
+/T/true
+/F/false
+/d/setdash
+/w/setlinewidth
+/J/setlinecap
+/j/setlinejoin
+/M/setmiterlimit
+/i/setflat
+/rc/rectclip
+/rf/rectfill
+/rs/rectstroke
+/f/fill
+/f*/eofill
+/sf/selectfont
+/s/show
+%/as/ashow
+/xS/xshow
+/yS/yshow
+/xyS/xyshow
+/S/stroke
+/m/moveto
+/l/lineto
+/c/curveto
+/h/closepath
+/n/newpath
+/q/gsave
+/Q/grestore
+counttomark 2 idiv
+%dup (number of ld's = )print == flush	% *** how many 
+{ld}repeat pop
+/SC{	% CSname
+    /ColorSpace fr scs
+}bd
+/sopr /setoverprint where{pop/setoverprint}{/pop}ifelse ld
+/soprm /setoverprintmode where{pop/setoverprintmode}{/pop}ifelse ld
+/cgmtx matrix def
+/sdmtx{cgmtx currentmatrix pop}bd
+/CM {cgmtx setmatrix}bd		% pop the ctm: our gstate ctm on host is now identity
+/cm {cmmtx astore CM concat}bd	% reset the matrix and then concat
+/W{clip newpath}bd
+/W*{eoclip newpath}bd
+
+statusdict begin product end dup (HP) anchorsearch{
+    pop pop pop	% pop off the search results
+    true
+}{
+    pop	% previous search result
+   (hp) anchorsearch{
+	pop pop true
+    }{
+	pop false
+    }ifelse
+}ifelse
+
+{	% HP is the product: we use this method of stroking because of a bug in their clone printers with certain T3 fonts
+    { 
+	{ % charCode Wx Wy
+	    pop pop % charCode
+	    (0)dup 0 4 -1 roll put
+	    F charpath
+	}cshow
+    }
+}{
+    {F charpath}
+}ifelse
+/cply exch bd
+/cps {cply stroke}bd
+/pgsave 0 def
+/bp{/pgsave save store}bd
+/ep{pgsave restore showpage}def		% dont' bind
+/re{4 2 roll m 1 index 0 rlineto 0 exch rlineto neg 0 rlineto h}bd
+
+/scrdict 10 dict def
+/scrmtx matrix def
+/patarray 0 def
+/createpat{patarray 3 1 roll put}bd
+/makepat{
+scrmtx astore pop
+gsave
+initgraphics
+CM 
+patarray exch get
+scrmtx
+makepattern
+grestore
+setpattern
+}bd
+
+/cg_BeginEPSF{
+    userdict save/cg_b4_Inc_state exch put
+    userdict/cg_endepsf/cg_EndEPSF load put
+    count userdict/cg_op_count 3 -1 roll put 
+    countdictstack dup array dictstack userdict/cg_dict_array 3 -1 roll put
+    3 sub{end}repeat
+    /showpage {} def
+    0 setgray 0 setlinecap 1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [] 0 setdash newpath
+    false setstrokeadjust false setoverprint	% don't use F
+}bd
+/cg_EndEPSF{
+  countdictstack 3 sub { end } repeat
+  cg_dict_array 3 1 index length 3 sub getinterval
+  {begin}forall
+  count userdict/cg_op_count get sub{pop}repeat
+  userdict/cg_b4_Inc_state get restore
+  F setpacking
+}bd
+
+/cg_biproc{currentfile/RunLengthDecode filter}bd
+/cg_aiproc{currentfile/ASCII85Decode filter/RunLengthDecode filter}bd
+/ImageDataSource 0 def
+L3?{
+    /cg_mibiproc{pop pop/ImageDataSource{cg_biproc}def}bd
+    /cg_miaiproc{pop pop/ImageDataSource{cg_aiproc}def}bd
+}{
+    /ImageBandMask 0 def
+    /ImageBandData 0 def
+    /cg_mibiproc{
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/RunLengthDecode filter dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+    /cg_miaiproc{	
+	string/ImageBandMask xs
+	string/ImageBandData xs
+	/ImageDataSource{[currentfile/ASCII85Decode filter/RunLengthDecode filter
+	    dup ImageBandMask/readstring cvx
+	    /pop cvx dup ImageBandData/readstring cvx/pop cvx]cvx bind}bd
+    }bd
+}ifelse
+/imsave 0 def
+/BI{save/imsave xd mark}bd
+/EI{imsave restore}bd
+/ID{
+counttomark 2 idiv
+dup 2 add	% leave room for imagetype and imagematrix
+dict begin
+{def} repeat
+pop		% remove mark
+/ImageType 1 def
+/ImageMatrix[Width 0 0 Height neg 0 Height]def
+currentdict dup/ImageMask known{ImageMask}{F}ifelse exch
+% currentdict on stack
+L3?{
+    dup/MaskedImage known
+    { 
+	pop
+	<<
+	    /ImageType 3
+	    /InterleaveType 2
+	    /DataDict currentdict
+	    /MaskDict
+	    <<  /ImageType 1
+		/Width Width
+		/Height Height
+		/ImageMatrix ImageMatrix
+		/BitsPerComponent 1
+		/Decode [0 1]
+		currentdict/Interpolate known
+		{/Interpolate Interpolate}if
+	    >>
+	>>
+    }if
+}if
+exch
+{imagemask}{image}ifelse	
+end	% pop imagedict from dict stack
+}bd
+
+/cguidfix{statusdict begin mark version end
+{cvr}stopped{cleartomark 0}{exch pop}ifelse
+2012 lt{dup findfont dup length dict begin
+{1 index/FID ne 2 index/UniqueID ne and
+{def} {pop pop} ifelse}forall
+currentdict end definefont pop
+}{pop}ifelse
+}bd
+/t_array 0 def
+/t_i 0 def
+/t_c 1 string def
+/x_proc{ % x y
+    exch t_array t_i get add exch moveto
+    /t_i t_i 1 add store
+}bd
+/y_proc{ % x y
+    t_array t_i get add moveto
+    /t_i t_i 1 add store
+}bd
+/xy_proc{
+        % x y
+	t_array t_i 2 copy 1 add get 3 1 roll get 
+	4 -1 roll add 3 1 roll add moveto
+	/t_i t_i 2 add store
+}bd
+/sop 0 def		% don't bind sop
+/cp_proc/x_proc ld 	% default moveto proc is for xwidths only
+/base_charpath		% string array
+{
+    /t_array xs
+    /t_i 0 def
+    { % char
+	t_c 0 3 -1 roll put
+        currentpoint
+	t_c cply sop
+        cp_proc
+    }forall
+    /t_array 0 def
+}bd
+/sop/stroke ld		% default sop is stroke. Done here so we don't bind in /base_charpath 
+
+% default sop is stroke
+/nop{}def
+/xsp/base_charpath ld
+/ysp{/cp_proc/y_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xysp{/cp_proc/xy_proc ld base_charpath/cp_proc/x_proc ld}bd
+/xmp{/sop/nop ld /cp_proc/x_proc ld base_charpath/sop/stroke ld}bd
+/ymp{/sop/nop ld /cp_proc/y_proc ld base_charpath/sop/stroke ld}bd
+/xymp{/sop/nop ld /cp_proc/xy_proc ld base_charpath/sop/stroke ld}bd
+/refnt{ % newname encoding fontname
+findfont dup length dict copy dup
+/Encoding 4 -1 roll put 
+definefont pop
+}bd
+/renmfont{ % newname fontname
+findfont dup length dict copy definefont pop
+}bd
+
+L3? dup dup{save exch}if
+
+% languagelevel2 ONLY code goes here
+
+/Range 0 def
+/DataSource 0 def
+/val 0 def
+/nRange 0 def
+/mulRange 0 def
+/d0 0 def
+/r0 0 def
+/di 0 def
+/ri 0 def
+/a0 0 def
+/a1 0 def
+/r1 0 def
+/r2 0 def
+/dx 0 def
+/Nsteps 0 def
+/sh3tp 0 def
+/ymax 0 def
+/ymin 0 def
+/xmax 0 def
+/xmin 0 def
+
+/setupFunEval % funDict -- 	% this calculates and sets up a function dict for evaulation.
+{
+    begin
+	/nRange Range length 2 idiv store
+	/mulRange   % precompute the range data needed to map a sample value from the table to a range value
+		    % this data looks like [ range0mul range0min range1mul range1min ... rangeN-1mul rangeN-1min ]
+	[ 
+	    0 1 nRange 1 sub
+	    { % index
+		    2 mul/nDim2 xd		% 2*dimension# we are dealing with
+		    Range nDim2 get		% ymin
+		    Range nDim2 1 add get	% ymin ymax 
+		    1 index sub			% ymin (ymax-ymin)
+						% xmin = 0, xmax = 255 (2^bitspersample - 1)
+		    255 div			% ymin (ymax-ymin)/(xmax - xmin)
+		    exch			% (ymax-ymin)/(xmax - xmin) ymin
+	    }for
+	]store
+    end
+}bd
+
+/FunEval % val1 fundict -> comp1 comp2 ... compN
+{
+    begin
+	% the value passed in is the base index into the table
+	nRange mul /val xd	% compute the actual index to the table
+				% since there are nRange entries per base index
+	0 1 nRange 1 sub
+	{
+	    dup 2 mul/nDim2 xd % dim
+	    val	% base value to use to do our lookup
+	    add DataSource exch get %  lookedupval
+	    mulRange nDim2 get mul 	% lookedupval*(ymax-ymin)/(xmax-xmin)
+	    mulRange nDim2 1 add get % lookedupval*(ymax-ymin)/(xmax-xmin) ymin
+	    add % interpolated result
+	}for	% comp1 comp2 ... compN
+    end
+}bd
+
+/max % a b -> max(a, b)
+{
+	2 copy lt
+	{exch pop}{pop}ifelse
+}bd
+
+/sh2
+{	% emulation of shading type 2. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 x1 y1
+	3 index 3 index translate	% origin is now at beginning point of shading
+					% x0 y0 x1 y1
+	3 -1 roll sub	% x0 x1 y1-y0
+	3 1 roll exch 	% y1-y0 x1 x0
+	sub				% y1-y0 x1-x0
+	2 copy
+	dup mul exch dup mul add sqrt	% length of segment between two points
+	dup
+	scale  
+	atan	% atan (dy/dx)
+	%dup (rotation angle = )print ==
+	rotate		% now line between 0,0 and 1,0 is the line perpendicular to which the axial lines are drawn					
+	
+	/Function load setupFunEval	% may need to setup function dictionary by calling setupFunEval
+	
+	% this is now specific to axial shadings. Compute the maximum bounds to fill
+	clippath {pathbbox}stopped {0 0 0 0}if newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+	currentdict/Extend known
+	{
+		/Extend load 0 get
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			xmin ymin xmin abs ymax ymin sub rectfill
+		}if
+	}if
+	% paint the rects. The sampling frequency is that of our table
+	/Nsteps/Function load/Size get 0 get 1 sub store
+	/dx 1 Nsteps div store
+	gsave
+		/di ymax ymin sub store
+		/Function load
+		% loop Nsteps + 1 times, incrementing the index by 1 each time
+		0 1 Nsteps
+		{
+			1 index FunEval sc
+			0 ymin dx di rectfill
+			dx 0 translate
+		}for
+		pop	% pop our function
+	grestore	% origin is back to start point
+	currentdict/Extend known
+	{
+		/Extend load 1 get
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			1 ymin xmax 1 sub abs ymax ymin sub rectfill
+		}if
+	}if
+}bd
+
+/shp	% this paints our shape for shading type 3
+{	% x1 r1 x0 r0 -
+	4 copy
+
+	% fill interior arc
+	dup 0 gt{
+		0 exch a1 a0 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a0 a1 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+
+	% fill exterior arc
+	dup 0 gt{
+		0 exch a0 a1 arc
+	}{
+		pop 0 moveto
+	}ifelse
+
+	dup 0 gt{
+		0 exch a1 a0 arcn
+	}{
+		pop 0 lineto
+	}ifelse
+	
+	fill
+}bd
+
+/calcmaxs
+{	% calculate maximum distance vector from origin to corner points
+	% of bbox
+	xmin dup mul ymin dup mul add sqrt		% (xmin2 + ymin2)
+	xmax dup mul ymin dup mul add sqrt		% (xmax2 + ymin2)
+	xmin dup mul ymax dup mul add sqrt		% (xmin2 + ymax2)
+	xmax dup mul ymax dup mul add sqrt		% (xmax2 + ymax2)
+	max max max								% maximum value
+}bd
+
+/sh3
+{	% emulation of shading type 3. Assumes shading dictionary is top dictionary on the dict stack
+	/Coords load aload pop 	% x0 y0 r1 x1 y1 r2
+	5 index 5 index translate	% origin is now at first circle origin
+	3 -1 roll 6 -1 roll sub		% y0 r1 y1 r2 dx
+	3 -1 roll 5 -1 roll sub		% r1 r2 dx dy
+	2 copy dup mul exch dup mul add sqrt
+	/dx xs						% r1 r2 dx dy
+	2 copy 0 ne exch 0 ne or
+	{
+		% r1 r2 dx dy
+		exch atan rotate	% we are now rotated so dy is zero and positive values of dx move us as expected
+	}{
+		pop pop
+	}ifelse
+	% r1 r2		
+	/r2 xs
+	/r1 xs
+	/Function load 
+	dup/Size get 0 get 1 sub	% this is the size of our table minus 1
+	/Nsteps xs		% at some point we should optimize this better so NSteps is based on needed steps for the device
+	setupFunEval		% may need to setup function dictionary by calling setupFunEval
+	% determine the case:
+	% case 0: circle1 inside circle2
+	% case 1: circle 2 inside circle 1
+	% case 2: r1 = r2 
+	% case 3: r1 != r2
+	dx r2 add r1 lt{
+		% circle 2 inside of circle 1
+		0 
+	}{
+		dx r1 add r2 le
+		{ % circle 1 inside of circle 2
+			1
+		}{ % circles don't contain each other
+			r1 r2 eq
+			{	% equal
+				2
+			}{ % r1 != r2
+				3
+			}ifelse		
+		}ifelse
+	}ifelse
+	/sh3tp xs		% sh3tp has the number of our different cases
+	clippath {pathbbox}stopped {0 0 0 0}if 
+	newpath 	% x0 y0 x1 y1
+	/ymax xs
+	/xmax xs
+	/ymin xs
+	/xmin xs
+
+	% Arc angle atan( sqrt((dx*dx + dy*dy) - dr*dr), dr)
+	dx dup mul r2 r1 sub dup mul sub dup 0 gt
+	{
+		sqrt r2 r1 sub atan
+		/a0 exch 180 exch sub store 
+		/a1 a0 neg store 
+	}{
+		pop
+		/a0 0 store
+		/a1 360 store		
+	}ifelse		
+
+	currentdict/Extend known
+	{
+		/Extend load 0 get r1 0 gt and	% no need to extend if the radius of the first end is 0
+		{	
+			0/Function load FunEval sc	% evaluate the function to get a color and set it
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{	% case 0
+					dx 0 r1 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				}
+				{	% case 1
+					r1 0 gt{0 0 r1 0 360 arc fill}if
+				}
+				{	% case 2
+					% r1 == r2, extend 0
+					% r3 = r, x3 = -(abs(minx) + r), x1 = 0
+				
+					% x(i+1) r(i+1) x(i) r(i) shp
+					0 r1 xmin abs r1 add neg r1 shp
+				}
+				{	% case 3
+					% no containment, r1 != r2
+				
+					r2 r1 gt{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1
+						r1 neg r2 r1 sub div dx mul	% this is point of beginning circle
+						0	% point of ending circle
+						shp	% takes x(i+1) r(i+1) x(i) r(i)
+					}{	% the first circle is the bigger of the two
+						% we find a circle on our line which is outside the bbox in the
+						% negative direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						0 r1 calcmaxs	% 0 r1 maxs
+						dup
+						% calculating xs: (-(maxs+r2)*x2)/(x2-(r1-r2))
+						r2 add dx mul dx r1 r2 sub sub div
+						neg				% maxs xs'
+						exch 1 index	% xs' maxs xs'
+						abs exch sub
+						shp
+					}ifelse
+				} 
+			}sh3tp get exec	% execute the extend at beginning proc for our shading type
+		}if
+	}if
+
+	% now do the shading
+	/d0 0 store
+	/r0 r1 store
+	/di dx Nsteps div store
+	/ri r2 r1 sub Nsteps div store 
+	/Function load 
+	0 1 Nsteps
+	{	% function t(i)
+		1 index FunEval sc
+		d0 di add r0 ri add d0 r0 shp
+		{
+		% fill interior arc
+		d0 0 r0 a1 a0 arc
+		d0 di add 0 r0 ri add a0 a1 arcn
+		fill
+		
+		% fill exterior arc
+		d0 0 r0 a0 a1 arc
+		d0 di add 0 r0 ri add a1 a0 arcn
+		fill
+		}pop
+		
+		% advance to next
+		/d0 d0 di add store
+		/r0 r0 ri add store
+	}for
+	pop	% pop our function dict
+
+	% handle Extend
+	currentdict/Extend known
+	{
+		/Extend load 1 get r2 0 gt and	% no need to extend if the radius of the last end is 0
+		{	
+			Nsteps/Function load FunEval sc	% last element
+			% case 0: circle1 inside circle2
+			% case 1: circle 2 inside circle 1
+			% case 2: circles don't contain each other and r1 == r2
+			% case 3: circles don't contain each other and r1 != r2
+			{ 
+				{
+					dx 0 r2 0 360 arc fill
+				} 
+				{
+					dx 0 r2 360 0 arcn
+					xmin ymin moveto
+					xmax ymin lineto
+					xmax ymax lineto
+					xmin ymax lineto
+					xmin ymin lineto
+					eofill		% for the bigger radius we fill everything except our circle
+				} 
+				{	% r1 == r2, extend 1
+					% r3 = r, x3 = (abs(xmax) + r), x1 = dx
+					% x(i+1) r(i+1) x(i) r(i) shp
+					xmax abs r1 add r1 dx r1 shp
+				}	
+				{	% no containment, r1 != r2
+			
+					r2 r1 gt{
+						% we find a circle on our line which is outside the bbox in the
+						% positive direction
+						% x(i+1) r(i+1) x(i) r(i) shp
+						calcmaxs dup	% maxs maxs
+						% calculating xs: ((maxs+r1)*x2)/(x2-(r2-r1))
+						r1 add dx mul dx r2 r1 sub sub div	% maxs xs
+						exch 1 index	% xs maxs xs
+						exch sub
+						dx r2
+						shp
+					}{	% the endpoint we are drawing is that with a circle of zero radius
+						% x(i+1) r(i+1) x(i) r(i) shp
+						r1 neg r2 r1 sub div dx mul	% this is point of ending circle
+						0		% radius of ending circle
+						dx 		% point of starting circle
+						r2		% radius of starting circle
+						shp
+					}ifelse
+				}
+			}			
+			sh3tp get exec	% execute the extend at end proc for our shading type
+		}if
+	}if
+}bd
+/sh		% emulation of shfill operator for type 2 and type 3 shadings based on type 0 functions
+{	% shadingDict --
+	begin
+		/ShadingType load dup dup 2 eq exch 3 eq or
+		{	% shadingtype
+			gsave
+				newpath
+				/ColorSpace load scs
+				currentdict/BBox known
+				{
+					/BBox load aload pop	% llx lly urx ury
+					2 index sub				% llx lly urx ury-lly
+					3 index					% llx lly urx ury-lly llx
+					3 -1 roll exch sub 
+					exch rectclip
+				}if
+				2 eq
+				{sh2}{sh3}ifelse
+			grestore
+		}{
+			% shadingtype
+			pop 
+			(DEBUG: shading type unimplemented\n)print flush
+		}ifelse
+	end
+}bd
+
+% end of language level 2 ONLY code
+
+{restore}if not dup{save exch}if
+% languagelevel3 ONLY code goes here
+	L3?{	% we do these loads conditionally or else they will fail on a level 2 printer
+		/sh/shfill ld
+		/csq/clipsave ld
+		/csQ/cliprestore ld
+	}if
+{restore}if
+
+%currentdict dup maxlength exch length sub (number of extra slots in md = )print == flush	% *** how many entries are free
+end
+setpacking
+% count 0 ne { pstack(***extras on stack during prolog execution***\n)print flush}if	% *** BARK if anything is left on stack
+%%EndFile
+%%EndProlog
+%%BeginSetup
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 0 0 135 156
+%%BeginPageSetup
+cg_md begin
+bp
+sdmtx
+[ /CIEBasedABC 4 dict dup begin 
+/WhitePoint [ 0.9505 1.0000 1.0891 ] def 
+/DecodeABC [ 
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+
+{ 1.0 0.0 3 -1 roll 1 index 1 index le { exch pop} { pop } ifelse 
+ 1 index 1 index ge { exch pop } { pop } ifelse < 
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000001010101010101010101010101
+0101010101010101010101010101010101010101010101020202020202020202
+0202020202020202020202020202020202030303030303030303030303030303
+0303030303030304040404040404040404040404040404040404050505050505
+0505050505050505050506060606060606060606060606060607070707070707
+0707070707070708080808080808080808080808090909090909090909090909
+0a0a0a0a0a0a0a0a0a0a0a0b0b0b0b0b0b0b0b0b0b0b0c0c0c0c0c0c0c0c0c0c
+0d0d0d0d0d0d0d0d0d0d0e0e0e0e0e0e0e0e0e0f0f0f0f0f0f0f0f0f10101010
+1010101010111111111111111112121212121212121313131313131313141414
+1414141414151515151515151616161616161616171717171717171818181818
+18181919191919191a1a1a1a1a1a1a1b1b1b1b1b1b1c1c1c1c1c1c1c1d1d1d1d
+1d1d1e1e1e1e1e1e1f1f1f1f1f1f202020202020212121212121222222222223
+2323232323242424242425252525252526262626262727272727282828282829
+292929292a2a2a2a2a2b2b2b2b2b2c2c2c2c2c2d2d2d2d2d2e2e2e2e2e2f2f2f
+2f2f303030303131313131323232323333333333343434343535353535363636
+36373737373838383839393939393a3a3a3a3b3b3b3b3c3c3c3c3d3d3d3d3e3e
+3e3e3f3f3f3f4040404041414141424242424343434444444445454545464646
+4647474748484848494949494a4a4a4b4b4b4b4c4c4c4d4d4d4d4e4e4e4f4f4f
+4f50505051515151525252535353535454545555555656565657575758585859
+59595a5a5a5a5b5b5b5c5c5c5d5d5d5e5e5e5f5f5f6060606061616162626263
+63636464646565656666666767676868686969696a6a6a6b6b6b6c6c6d6d6d6e
+6e6e6f6f6f707070717171727273737374747475757576767677777878787979
+797a7a7b7b7b7c7c7c7d7d7e7e7e7f7f7f808081818182828283838484848585
+86868687878888888989898a8a8b8b8b8c8c8d8d8d8e8e8f8f90909091919292
+9293939494949595969697979798989999999a9a9b9b9c9c9c9d9d9e9e9f9f9f
+a0a0a1a1a2a2a3a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaaabababacacadadae
+aeafafb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b6b7b7b8b8b9b9bababbbbbcbcbd
+bdbebebebfbfc0c0c1c1c2c2c3c3c4c4c5c5c6c6c7c7c8c8c9c9cacacbcbcccc
+cdcdcececfcfd0d0d1d1d2d2d3d3d4d4d5d5d6d6d7d7d8d8d9d9dadadbdcdcdd
+dddededfdfe0e0e1e1e2e2e3e3e4e4e5e6e6e7e7e8e8e9e9eaeaebebecededee
+eeefeff0f0f1f1f2f3f3f4f4f5f5f6f6f7f8f8f9f9fafafbfcfcfdfdfefeffff
+>  dup length 1 sub 3 -1 roll mul dup dup floor cvi exch ceiling 
+ cvi 3 index exch get 4 -1 roll 3 -1 roll get
+ dup 3 1 roll sub 3 -1 roll dup floor cvi sub mul add 255 div } bind 
+] def 
+/MatrixABC [ 0.4124 0.2126 0.0193 0.3576 0.7151 0.1192 0.1805 0.0722 0.9508 ] def 
+/RangeLMN [ 0.0 0.9505 0.0 1.0000 0.0 1.0891 ] def 
+end ] /Cs1 exch/ColorSpace dr pop
+%%EndPageSetup
+0.60000002 i
+/Cs1 SC
+1 1 1 sc
+q
+0 156 m
+135 156 l
+133 39 l
+68 0 l
+2 39 l
+0 156 l
+h
+W*
+0 0 135 156 rc
+-5 161 m
+140 161 l
+140 -5 l
+-5 -5 l
+h
+f
+Q
+q
+0 0 135 156 rc
+422 0 0 156 -275 0 cm
+BI
+/Width 1266
+/Height 468
+/BitsPerComponent 8
+/Decode[
+0 1
+0 1
+0 1
+]
+/Interpolate true
+/DataSource cg_aiproc
+ID
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq!>aJb"B_Jb"B_Jb"B_Jb"B_Re$IL
+Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)Pa@YO[88Jb"B_Jb"B_Jb"B_Jb#9#
+rpuETJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq!>aJb"B_Jb"B_Jb"B_Jb"B_
+Re$ILQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)Pa@qsq/pJcC<$JcC<$JcC<$
+JcC<$T`=o[rpuETJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq-*Yrr0G-JcC<$
+JcC<$JcC<$JcC<$U]:>mqssaYQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)Pa@
+qssac\Gq-[JcC<$JcC<$JcC<$JcDMFrr2fcrpuETJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF=$rq$$Xrr0G-JcC<$JcC<$JcC<$JcC<$U]:>mqssaXQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$f)Pa@qssac\Gq-[JcC<$JcC<$JcC<$JcDMFrr2fcrpuETJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq$$Xrr0G-JcC<$JcC<$JcC<$JcC<$U]:>mqssaXQ2cF8
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaAqssab\Gq-[JcC<$JcC<$JcC<$JcDMF
+rr)`brq)KUJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq-*Yrr'A,JcC<$JcC<$
+JcC<$JcC<$U]:>lqssaYQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)Pa@qssab
+\Gq-[JcC<$JcC<$JcC<$JcDMFrr)`brpuETJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF=$rq$$Xrr'A,JcC<$JcC<$JcC<$JcC<$U]:>lqssaXQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$f)PaAqssaa\Gq-[JcC<$JcC<$JcC<$JcDMFrquZarq)KUJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq-*Yrqs;+JcC<$JcC<$JcC<$JcC<$U]:>kqssaYQ2cF8JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaAqssaa\Gq-[JcC<$JcC<$JcC<$JcDMFrquZa
+rq)KUJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq-*Yrqs;+JcC<$JcC<$JcC<$
+JcC<$U]:>kqssaYQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaAqssaa\Gq-[
+JcC<$JcC<$JcC<$JcDMFrquZarq)KUJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$
+rq60Zrqj5*JcC<$JcC<$JcC<$JcC<$U]:>jqssaZQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$f)PaBqssa`\Gq-[JcC<$JcC<$JcC<$JcDMFrqlT`rq2QVJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF=$rq60Zrqj5*JcC<$JcC<$JcC<$JcC<$U]:>jqssaZQ2cF8JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaAqssa`\Gq-[JcC<$JcC<$JcC<$JcDMFrqlT`rq)KU
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq-*Yrqj5*JcC<$JcC<$JcC<$JcC<$
+U]:>jqssaYQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaBqssa_\Gq-[JcC<$
+JcC<$JcC<$JcDMFrqcN_rq2QVJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq60Z
+rqa/)JcC<$JcC<$JcC<$JcC<$U]:>iqssaZQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$f)PaBqssa_\Gq-[JcC<$JcC<$JcC<$JcDMFrqcN_rq2QVJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcF=$rq60Zrqa/)JcC<$JcC<$JcC<$JcC<$U]:>iqssaZQ2cF8JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaCqssa^\Gq-[JcC<$JcC<$JcC<$JcDMFrqZH^rq;WWJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq?6[rqX)(JcC<$JcC<$JcC<$JcC<$U]:>h
+qssa[Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaCqssa^\Gq-[JcC<$JcC<$
+JcC<$JcDMFrqZH^rq;WWJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rq?6[rqX)(
+JcC<$JcC<$JcC<$JcC<$U]:>hqssa[Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+f)PaDqssa]\Gq-[JcC<$JcC<$JcC<$JcDMFrqQB]rqD]XJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcF=$rqH<\rqO#'JcC<$JcC<$JcC<$JcC<$U]:>gqssa\Q2cF8JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$f)PaDqssa]\Gq-[JcC<$JcC<$JcC<$JcDMFrqQB]rqD]XJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rqH<\rqO#'JcC<$JcC<$JcC<$JcC<$U]:>gqssa\
+Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaDqssa]\Gq-[JcC<$JcC<$JcC<$
+JcDMFrqQB]rqD]XJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rqQB]rqEr&JcC<$
+JcC<$JcC<$JcC<$U]:>fqssa]Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaF
+qssa\\Gq-[JcC<$JcC<$JcC<$JcDMFrqH<\rqViZJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF=$rqZH^rqEr&JcC<$JcC<$JcC<$JcC<$U]:>fqssa^Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$f)PaFqssa\\Gq-[JcC<$JcC<$JcC<$JcDMFrqH<\rqViZJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rqcN_rq<l%JcC<$JcC<$JcC<$JcC<$U]:>eqssa_Q2cF8
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaGqssa[\Gq-[JcC<$JcC<$JcC<$JcDMF
+rq?6[rq_o[JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rqcN_rq<l%JcC<$JcC<$
+JcC<$JcC<$U]:>eqssa_Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaGqssa[
+\Gq-[JcC<$JcC<$JcC<$JcDMFrq?6[rq_o[JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF=$rqcN_rq<l%JcC<$JcC<$JcC<$JcC<$U]:>eqssa_Q2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$f)PaHqssaZ\Gq-[JcC<$JcC<$JcC<$JcDMFrq60Zrqhu\JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rqlT`rq3f$JcC<$JcC<$JcC<$JcC<$U]:>dqssa`Q2cF8JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaIqssaZ\Gq-[JcC<$JcC<$JcC<$JcDMFrq60Z
+rqr&]JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$rquZarq3f$JcC<$JcC<$JcC<$
+JcC<$U]:>dqssaaQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaJqssaY\Gq-[
+JcC<$JcC<$JcC<$JcDMFrq-*Yrr&,^JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF=$
+rr)`brq*`#JcC<$JcC<$JcC<$JcC<$U]:>cqssabQ2cF8JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$f)PaJqssaY\Gq-[JcC<$JcC<$JcC<$JcDMFrq-*Yrr&,^JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF=$rr)`brq*`#JcC<$JcC<$JcC<$JcC<$U]:>cqssabQ2cF8JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$f)PaKqssaY\Gq-[JcC<$JcC<$JcC<$JcDMFrq-*Yrr/2_
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!qssaX\Gq-[JcC<$JcC<$JcC<$JcDMF
+rq$$XP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,T=9rq!Z"JcC<$JcC<$JcC<$
+JcC<$U]:>bqsopMJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!qssaX\Gq-[JcC<$
+JcC<$JcC<$JcDMFrq$$XP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,T=9rq!Z"
+JcC<$JcC<$JcC<$JcC<$U]:>bqsopMJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!
+q!trpJcC<$JcC<$JcC<$JcC<$U]:,[P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+e,TF=qsq8sJcC<$JcC<$JcC<$JcC<$U]:5^rpu<QJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF4!rq$$X\Gq-[JcC<$JcC<$JcC<$JcDMFqssaXP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$e,TF=qsq8sJcC<$JcC<$JcC<$JcC<$U]:5^rpu<QJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF4!rq$$X\Gq-[JcC<$JcC<$JcC<$JcDMFqssaXP5g+5JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF=qssac]DmH^JcC<$JcC<$JcC<$JcDVIrr2fcrpu<QJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq$$Xrr0P0JcC<$JcC<$JcC<$JcC<$VZ6Yp
+qssaXP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF=qssac]DmH^JcC<$JcC<$
+JcC<$JcDVIrr2fcrpu<QJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq$$Xrr0P0
+JcC<$JcC<$JcC<$JcC<$VZ6YpqssaXP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+e,TF=qssac]DmH^JcC<$JcC<$JcC<$JcDVIrr2fcrpu<QJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcF4!rq-*Yrr'J/JcC<$JcC<$JcC<$JcC<$VZ6YoqssaYP5g+5JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$e,TF>qssab]DmH^JcC<$JcC<$JcC<$JcDVIrr)`brq)BRJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq$$Xrr'J/JcC<$JcC<$JcC<$JcC<$VZ6YoqssaX
+P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF=qssab]DmH^JcC<$JcC<$JcC<$
+JcDVIrr)`brpu<QJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq-*YrqsD.JcC<$
+JcC<$JcC<$JcC<$VZ6YnqssaYP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF>
+qssaa]DmH^JcC<$JcC<$JcC<$JcDVIrquZarq)BRJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF4!rq-*YrqsD.JcC<$JcC<$JcC<$JcC<$VZ6YnqssaYP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$e,TF>qssaa]DmH^JcC<$JcC<$JcC<$JcDVIrquZarq)BRJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq60Zrqj>-JcC<$JcC<$JcC<$JcC<$VZ6YmqssaZP5g+5
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF?qssa`]DmH^JcC<$JcC<$JcC<$JcDVI
+rqlT`rq2HSJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq60Zrqj>-JcC<$JcC<$
+JcC<$JcC<$VZ6YmqssaZP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF?qssa`
+]DmH^JcC<$JcC<$JcC<$JcDVIrqlT`rq2HSJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF4!rq-*Yrqj>-JcC<$JcC<$JcC<$JcC<$VZ6YmqssaYP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$e,TF?qssa_]DmH^JcC<$JcC<$JcC<$JcDVIrqcN_rq2HSJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq60Zrqa8,JcC<$JcC<$JcC<$JcC<$VZ6YlqssaZP5g+5JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF?qssa_]DmH^JcC<$JcC<$JcC<$JcDVIrqcN_
+rq2HSJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rq60Zrqa8,JcC<$JcC<$JcC<$
+JcC<$VZ6YlqssaZP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF@qssa^]DmH^
+JcC<$JcC<$JcC<$JcDVIrqZH^rq;NTJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!
+rq?6[rqX2+JcC<$JcC<$JcC<$JcC<$VZ6Ykqssa[P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$e,TF@qssa^]DmH^JcC<$JcC<$JcC<$JcDVIrqZH^rq;NTJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF4!rq?6[rqX2+JcC<$JcC<$JcC<$JcC<$VZ6Ykqssa[P5g+5JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TF@qssa^]DmH^JcC<$JcC<$JcC<$JcDVIrqZH^rq;NT
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rqH<\rqO,*JcC<$JcC<$JcC<$JcC<$
+VZ6Yjqssa\P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TFAqssa]]DmH^JcC<$
+JcC<$JcC<$JcDVIrqQB]rqDTUJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rqH<\
+rqO,*JcC<$JcC<$JcC<$JcC<$VZ6Yjqssa\P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$e,TFAqssa]]DmH^JcC<$JcC<$JcC<$JcDVIrqQB]rqDTUJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcF4!rqQB]rqF&)JcC<$JcC<$JcC<$JcC<$VZ6Yiqssa]P5g+5JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TFBqssa\]DmH^JcC<$JcC<$JcC<$JcDVIrqH<\rqMZVJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rqZH^rqF&)JcC<$JcC<$JcC<$JcC<$VZ6Yi
+qssa^P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TFCqssa\]DmH^JcC<$JcC<$
+JcC<$JcDVIrqH<\rqV`WJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rqZH^rqF&)
+JcC<$JcC<$JcC<$JcC<$VZ6Yiqssa^P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+e,TFDqssa[]DmH^JcC<$JcC<$JcC<$JcDVIrq?6[rq_fXJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcF4!rqcN_rq<u(JcC<$JcC<$JcC<$JcC<$VZ6Yhqssa_P5g+5JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$e,TFDqssa[]DmH^JcC<$JcC<$JcC<$JcDVIrq?6[rq_fXJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rqcN_rq<u(JcC<$JcC<$JcC<$JcC<$VZ6Yhqssa_
+P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TFEqssaZ]DmH^JcC<$JcC<$JcC<$
+JcDVIrq60ZrqhlYJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rqlT`rq3o'JcC<$
+JcC<$JcC<$JcC<$VZ6Ygqssa`P5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TFE
+qssaZ]DmH^JcC<$JcC<$JcC<$JcDVIrq60ZrqhlYJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF4!rquZarq3o'JcC<$JcC<$JcC<$JcC<$VZ6YgqssaaP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$e,TFFqssaZ]DmH^JcC<$JcC<$JcC<$JcDVIrq60ZrqqrZJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rr)`brq*i&JcC<$JcC<$JcC<$JcC<$VZ6YfqssabP5g+5
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TFGqssaY]DmH^JcC<$JcC<$JcC<$JcDVI
+rq-*Yrr&#[JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF4!rr)`brq*i&JcC<$JcC<$
+JcC<$JcC<$VZ6YfqssabP5g+5JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$e,TFGqssaY
+]DmH^JcC<$JcC<$JcC<$JcDVIrq-*Yrr&#[JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF*sqssaX]DmH^JcC<$JcC<$JcC<$JcDVIrq$$XO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$d/X"6rq!c%JcC<$JcC<$JcC<$JcC<$VZ6YeqsogJJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcF*sqssaX]DmH^JcC<$JcC<$JcC<$JcDVIrq$$XO8je2JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$d/X"6rq!c%JcC<$JcC<$JcC<$JcC<$VZ6YeqsogJJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*sqssaX]DmH^JcC<$JcC<$JcC<$JcDVIrq$$XO8je2JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+:qsqB!JcC<$JcC<$JcC<$JcC<$VZ6Parpu3N
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq$$X]DmH^JcC<$JcC<$JcC<$JcDVI
+qssaXO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+:qsqB!JcC<$JcC<$JcC<$
+JcC<$VZ6Parpu3NJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq$$X]DmH^JcC<$
+JcC<$JcC<$JcDVIqssaXO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+:qssac
+^AicaJcC<$JcC<$JcC<$JcD_Lrr2fcrpu3NJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF*srq$$Xrr0Y3JcC<$JcC<$JcC<$JcC<$WW2tsqssaXO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$d/X+:qssac^AicaJcC<$JcC<$JcC<$JcD_Lrr2fcrpu3NJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq$$Xrr0Y3JcC<$JcC<$JcC<$JcC<$WW2tsqssaXO8je2JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+:qssac^AicaJcC<$JcC<$JcC<$JcD_Lrr2fc
+rpu3NJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq-*Yrr'S2JcC<$JcC<$JcC<$
+JcC<$WW2trqssaYO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+;qssab^Aica
+JcC<$JcC<$JcC<$JcD_Lrr)`brq)9OJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*s
+rq$$Xrr'S2JcC<$JcC<$JcC<$JcC<$WW2trqssaXO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$d/X+:qssab^AicaJcC<$JcC<$JcC<$JcD_Lrr)`brpu3NJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF*srq-*YrqsM1JcC<$JcC<$JcC<$JcC<$WW2tqqssaYO8je2JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+;qssaa^AicaJcC<$JcC<$JcC<$JcD_LrquZarq)9O
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq-*YrqsM1JcC<$JcC<$JcC<$JcC<$
+WW2tqqssaYO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+;qssaa^AicaJcC<$
+JcC<$JcC<$JcD_LrquZarq)9OJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq-*Y
+rqsM1JcC<$JcC<$JcC<$JcC<$WW2tqqssaYO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$d/X+<qssa`^AicaJcC<$JcC<$JcC<$JcD_LrqlT`rq2?PJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcF*srq60ZrqjG0JcC<$JcC<$JcC<$JcC<$WW2tpqssaZO8je2JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+<qssa`^AicaJcC<$JcC<$JcC<$JcD_LrqlT`rq2?PJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq-*YrqjG0JcC<$JcC<$JcC<$JcC<$WW2tp
+qssaYO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+;qssa`^AicaJcC<$JcC<$
+JcC<$JcD_LrqlT`rq)9OJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq60ZrqaA/
+JcC<$JcC<$JcC<$JcC<$WW2toqssaZO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+d/X+<qssa_^AicaJcC<$JcC<$JcC<$JcD_LrqcN_rq2?PJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcF*srq60ZrqaA/JcC<$JcC<$JcC<$JcC<$WW2toqssaZO8je2JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$d/X+<qssa_^AicaJcC<$JcC<$JcC<$JcD_LrqcN_rq2?PJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq?6[rqX;.JcC<$JcC<$JcC<$JcC<$WW2tnqssa[
+O8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+=qssa^^AicaJcC<$JcC<$JcC<$
+JcD_LrqZH^rq;EQJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srq?6[rqX;.JcC<$
+JcC<$JcC<$JcC<$WW2tnqssa[O8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+=
+qssa^^AicaJcC<$JcC<$JcC<$JcD_LrqZH^rq;EQJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF*srqH<\rqO5-JcC<$JcC<$JcC<$JcC<$WW2tmqssa\O8je2JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$d/X+>qssa]^AicaJcC<$JcC<$JcC<$JcD_LrqQB]rqDKRJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srqH<\rqO5-JcC<$JcC<$JcC<$JcC<$WW2tmqssa\O8je2
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+>qssa]^AicaJcC<$JcC<$JcC<$JcD_L
+rqQB]rqDKRJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srqH<\rqO5-JcC<$JcC<$
+JcC<$JcC<$WW2tmqssa\O8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+?qssa\
+^AicaJcC<$JcC<$JcC<$JcD_LrqH<\rqMQSJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF*srqZH^rqF/,JcC<$JcC<$JcC<$JcC<$WW2tlqssa^O8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$d/X+@qssa\^AicaJcC<$JcC<$JcC<$JcD_LrqH<\rqVWTJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srqZH^rqF/,JcC<$JcC<$JcC<$JcC<$WW2tlqssa^O8je2JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+Aqssa[^AicaJcC<$JcC<$JcC<$JcD_Lrq?6[
+rq_]UJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srqcN_rq=)+JcC<$JcC<$JcC<$
+JcC<$WW2tkqssa_O8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+Aqssa[^Aica
+JcC<$JcC<$JcC<$JcD_Lrq?6[rq_]UJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*s
+rqcN_rq=)+JcC<$JcC<$JcC<$JcC<$WW2tkqssa_O8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$d/X+Aqssa[^AicaJcC<$JcC<$JcC<$JcD_Lrq?6[rq_]UJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF*srqlT`rq4#*JcC<$JcC<$JcC<$JcC<$WW2tjqssa`O8je2JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+BqssaZ^AicaJcC<$JcC<$JcC<$JcD_Lrq60ZrqhcV
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srquZarq4#*JcC<$JcC<$JcC<$JcC<$
+WW2tjqssaaO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+CqssaZ^AicaJcC<$
+JcC<$JcC<$JcD_Lrq60ZrqqiWJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srr)`b
+rq*r)JcC<$JcC<$JcC<$JcC<$WW2tiqssabO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$d/X+DqssaY^AicaJcC<$JcC<$JcC<$JcD_Lrq-*Yrr%oXJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcF*srr)`brq*r)JcC<$JcC<$JcC<$JcC<$WW2tiqssabO8je2JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$d/X+DqssaY^AicaJcC<$JcC<$JcC<$JcD_Lrq-*Yrr%oXJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF*srr2fcrq*r)JcC<$JcC<$JcC<$JcC<$WW2ti
+qssacO8je2JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[\3rq!l(JcC<$JcC<$JcC<$
+JcC<$WW2thqso^GJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!pqssaX^AicaJcC<$
+JcC<$JcC<$JcD_Lrq$$XN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[\3rq!l(
+JcC<$JcC<$JcC<$JcC<$WW2thqso^GJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!p
+qssaX^AicaJcC<$JcC<$JcC<$JcD_Lrq$$XN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$c2[S0^AicaJcC<$JcC<$JcC<$JcD_Lq!sCDJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF!prq$$X^AicaJcC<$JcC<$JcC<$JcD_LqssaXN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$c2[e7qsqK$JcC<$JcC<$JcC<$JcC<$WW2kdrpu*KJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF!prq$$X^AicaJcC<$JcC<$JcC<$JcD_LqssaXN;nJ/JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e7qsqK$JcC<$JcC<$JcC<$JcC<$WW2kdrpu*KJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq$$Xrr0b6JcC<$JcC<$JcC<$JcC<$XT/;!qssaX
+N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e7qssac_>f)dJcC<$JcC<$JcC<$
+JcDhOrr2fcrpu*KJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq$$Xrr0b6JcC<$
+JcC<$JcC<$JcC<$XT/;!qssaXN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e7
+qssac_>f)dJcC<$JcC<$JcC<$JcDhOrr2fcrpu*KJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF!prq$$Xrr0b6JcC<$JcC<$JcC<$JcC<$XT/;!qssaXN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$c2[e8qssab_>f)dJcC<$JcC<$JcC<$JcDhOrr)`brq)0LJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq-*Yrr'\5JcC<$JcC<$JcC<$JcC<$XT/:uqssaYN;nJ/
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e7qssab_>f)dJcC<$JcC<$JcC<$JcDhO
+rr)`brpu*KJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq$$Xrr'\5JcC<$JcC<$
+JcC<$JcC<$XT/:uqssaXN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e8qssaa
+_>f)dJcC<$JcC<$JcC<$JcDhOrquZarq)0LJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF!prq-*YrqsV4JcC<$JcC<$JcC<$JcC<$XT/:tqssaYN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$c2[e8qssaa_>f)dJcC<$JcC<$JcC<$JcDhOrquZarq)0LJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq-*YrqsV4JcC<$JcC<$JcC<$JcC<$XT/:tqssaYN;nJ/JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e8qssa`_>f)dJcC<$JcC<$JcC<$JcDhOrqlT`
+rq)0LJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq60ZrqjP3JcC<$JcC<$JcC<$
+JcC<$XT/:sqssaZN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e9qssa`_>f)d
+JcC<$JcC<$JcC<$JcDhOrqlT`rq26MJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!p
+rq60ZrqjP3JcC<$JcC<$JcC<$JcC<$XT/:sqssaZN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$c2[e8qssa`_>f)dJcC<$JcC<$JcC<$JcDhOrqlT`rq)0LJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcF!prq60ZrqaJ2JcC<$JcC<$JcC<$JcC<$XT/:rqssaZN;nJ/JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e9qssa__>f)dJcC<$JcC<$JcC<$JcDhOrqcN_rq26M
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq60ZrqaJ2JcC<$JcC<$JcC<$JcC<$
+XT/:rqssaZN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e9qssa__>f)dJcC<$
+JcC<$JcC<$JcDhOrqcN_rq26MJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq?6[
+rqXD1JcC<$JcC<$JcC<$JcC<$XT/:qqssa[N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$c2[e:qssa^_>f)dJcC<$JcC<$JcC<$JcDhOrqZH^rq;<NJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcF!prq?6[rqXD1JcC<$JcC<$JcC<$JcC<$XT/:qqssa[N;nJ/JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e:qssa^_>f)dJcC<$JcC<$JcC<$JcDhOrqZH^rq;<NJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prq?6[rqXD1JcC<$JcC<$JcC<$JcC<$XT/:q
+qssa[N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e;qssa]_>f)dJcC<$JcC<$
+JcC<$JcDhOrqQB]rqDBOJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prqH<\rqO>0
+JcC<$JcC<$JcC<$JcC<$XT/:pqssa\N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+c2[e;qssa]_>f)dJcC<$JcC<$JcC<$JcDhOrqQB]rqDBOJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcF!prqH<\rqO>0JcC<$JcC<$JcC<$JcC<$XT/:pqssa\N;nJ/JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$c2[e<qssa\_>f)dJcC<$JcC<$JcC<$JcDhOrqH<\rqMHPJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prqQB]rqF8/JcC<$JcC<$JcC<$JcC<$XT/:oqssa]
+N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e=qssa\_>f)dJcC<$JcC<$JcC<$
+JcDhOrqH<\rqVNQJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prqZH^rqF8/JcC<$
+JcC<$JcC<$JcC<$XT/:oqssa^N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e=
+qssa\_>f)dJcC<$JcC<$JcC<$JcDhOrqH<\rqVNQJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcF!prqcN_rq=2.JcC<$JcC<$JcC<$JcC<$XT/:nqssa_N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$c2[e>qssa[_>f)dJcC<$JcC<$JcC<$JcDhOrq?6[rq_TRJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prqcN_rq=2.JcC<$JcC<$JcC<$JcC<$XT/:nqssa_N;nJ/
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e>qssa[_>f)dJcC<$JcC<$JcC<$JcDhO
+rq?6[rq_TRJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prqlT`rq4,-JcC<$JcC<$
+JcC<$JcC<$XT/:mqssa`N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[e?qssaZ
+_>f)dJcC<$JcC<$JcC<$JcDhOrq60ZrqhZSJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcF!prqlT`rq4,-JcC<$JcC<$JcC<$JcC<$XT/:mqssa`N;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$c2[e@qssaZ_>f)dJcC<$JcC<$JcC<$JcDhOrq60Zrqq`TJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prquZarq4,-JcC<$JcC<$JcC<$JcC<$XT/:mqssaaN;nJ/JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[eAqssaY_>f)dJcC<$JcC<$JcC<$JcDhOrq-*Y
+rr%fUJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!prr)`brq+&,JcC<$JcC<$JcC<$
+JcC<$XT/:lqssabN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$c2[eAqssaY_>f)d
+JcC<$JcC<$JcC<$JcDhOrq-*Yrr%fUJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcF!p
+rr)`brq+&,JcC<$JcC<$JcC<$JcC<$XT/:lqssabN;nJ/JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$b5_A0rq!u+JcC<$JcC<$JcC<$JcC<$XT/:kqsoUDJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcEmmqssaX_>f)dJcC<$JcC<$JcC<$JcDhOrq$$XM>r/,JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$b5_A0rq!u+JcC<$JcC<$JcC<$JcC<$XT/:kqsoUDJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmqssaX_>f)dJcC<$JcC<$JcC<$JcDhOrq$$XM>r/,JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_A0rq!u+JcC<$JcC<$JcC<$JcC<$XT/:kqsoUD
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq$$X_>f)dJcC<$JcC<$JcC<$JcDhO
+qssaXM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J4qsqT'JcC<$JcC<$JcC<$
+JcC<$XT/1grpu!HJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq$$X_>f)dJcC<$
+JcC<$JcC<$JcDhOqssaXM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J4qsqT'
+JcC<$JcC<$JcC<$JcC<$XT/1grpu!HJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmm
+rq$$X_>f)dJcC<$JcC<$JcC<$JcDhOqssaXM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$b5_J4qssac`;bDgJcC<$JcC<$JcC<$JcDqRrr2fcrpu!HJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcEmmrq$$Xrr0k9JcC<$JcC<$JcC<$JcC<$YQ+V$qssaXM>r/,JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J4qssac`;bDgJcC<$JcC<$JcC<$JcDqRrr2fcrpu!HJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq$$Xrr0k9JcC<$JcC<$JcC<$JcC<$YQ+V$
+qssaXM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J5qssab`;bDgJcC<$JcC<$
+JcC<$JcDqRrr)`brq)'IJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq-*Yrr'e8
+JcC<$JcC<$JcC<$JcC<$YQ+V#qssaYM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+b5_J4qssab`;bDgJcC<$JcC<$JcC<$JcDqRrr)`brpu!HJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcEmmrq$$Xrr'e8JcC<$JcC<$JcC<$JcC<$YQ+V#qssaXM>r/,JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$b5_J5qssaa`;bDgJcC<$JcC<$JcC<$JcDqRrquZarq)'IJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq-*Yrqs_7JcC<$JcC<$JcC<$JcC<$YQ+V"qssaY
+M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J5qssaa`;bDgJcC<$JcC<$JcC<$
+JcDqRrquZarq)'IJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq-*Yrqs_7JcC<$
+JcC<$JcC<$JcC<$YQ+V"qssaYM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J5
+qssaa`;bDgJcC<$JcC<$JcC<$JcDqRrquZarq)'IJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcEmmrq60ZrqjY6JcC<$JcC<$JcC<$JcC<$YQ+V!qssaZM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$b5_J6qssa``;bDgJcC<$JcC<$JcC<$JcDqRrqlT`rq2-JJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq60ZrqjY6JcC<$JcC<$JcC<$JcC<$YQ+V!qssaZM>r/,
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J5qssa``;bDgJcC<$JcC<$JcC<$JcDqR
+rqlT`rq)'IJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq-*YrqjY6JcC<$JcC<$
+JcC<$JcC<$YQ+V!qssaYM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J6qssa_
+`;bDgJcC<$JcC<$JcC<$JcDqRrqcN_rq2-JJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcEmmrq60ZrqaS5JcC<$JcC<$JcC<$JcC<$YQ+UuqssaZM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$b5_J6qssa_`;bDgJcC<$JcC<$JcC<$JcDqRrqcN_rq2-JJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq60ZrqaS5JcC<$JcC<$JcC<$JcC<$YQ+UuqssaZM>r/,JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J7qssa^`;bDgJcC<$JcC<$JcC<$JcDqRrqZH^
+rq;3KJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrq?6[rqXM4JcC<$JcC<$JcC<$
+JcC<$YQ+Utqssa[M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J7qssa^`;bDg
+JcC<$JcC<$JcC<$JcDqRrqZH^rq;3KJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmm
+rq?6[rqXM4JcC<$JcC<$JcC<$JcC<$YQ+Utqssa[M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$b5_J7qssa]`;bDgJcC<$JcC<$JcC<$JcDqRrqQB]rq;3KJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcEmmrqH<\rqOG3JcC<$JcC<$JcC<$JcC<$YQ+Usqssa\M>r/,JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J8qssa]`;bDgJcC<$JcC<$JcC<$JcDqRrqQB]rqD9L
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrqH<\rqOG3JcC<$JcC<$JcC<$JcC<$
+YQ+Usqssa\M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J8qssa]`;bDgJcC<$
+JcC<$JcC<$JcDqRrqQB]rqD9LJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrqQB]
+rqFA2JcC<$JcC<$JcC<$JcC<$YQ+Urqssa]M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$b5_J:qssa\`;bDgJcC<$JcC<$JcC<$JcDqRrqH<\rqVENJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcEmmrqZH^rqFA2JcC<$JcC<$JcC<$JcC<$YQ+Urqssa^M>r/,JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J:qssa\`;bDgJcC<$JcC<$JcC<$JcDqRrqH<\rqVENJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrqcN_rq=;1JcC<$JcC<$JcC<$JcC<$YQ+Uq
+qssa_M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J;qssa[`;bDgJcC<$JcC<$
+JcC<$JcDqRrq?6[rq_KOJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrqcN_rq=;1
+JcC<$JcC<$JcC<$JcC<$YQ+Uqqssa_M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+b5_J;qssa[`;bDgJcC<$JcC<$JcC<$JcDqRrq?6[rq_KOJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcEmmrqcN_rq=;1JcC<$JcC<$JcC<$JcC<$YQ+Uqqssa_M>r/,JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$b5_J<qssaZ`;bDgJcC<$JcC<$JcC<$JcDqRrq60ZrqhQPJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrqlT`rq450JcC<$JcC<$JcC<$JcC<$YQ+Upqssa`
+M>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J=qssaZ`;bDgJcC<$JcC<$JcC<$
+JcDqRrq60ZrqqWQJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrquZarq450JcC<$
+JcC<$JcC<$JcC<$YQ+UpqssaaM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J>
+qssaY`;bDgJcC<$JcC<$JcC<$JcDqRrq-*Yrr%]RJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcEmmrr)`brq+//JcC<$JcC<$JcC<$JcC<$YQ+UoqssabM>r/,JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$b5_J>qssaY`;bDgJcC<$JcC<$JcC<$JcDqRrq-*Yrr%]RJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEmmrr)`brq+//JcC<$JcC<$JcC<$JcC<$YQ+UoqssabM>r/,
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$b5_J?qssaY`;bDgJcC<$JcC<$JcC<$JcDqR
+rq-*Yrr.cSJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjqssaX`;bDgJcC<$JcC<$
+JcC<$JcDqRrq$$XLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c&-rq").JcC<$
+JcC<$JcC<$JcC<$YQ+UnqsoLAJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjqssaX
+`;bDgJcC<$JcC<$JcC<$JcDqRrq$$XLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+a8c&-rq").JcC<$JcC<$JcC<$JcC<$YQ+UnqsoLAJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcEdjq!uB'JcC<$JcC<$JcC<$JcC<$YQ+CgLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$a8c/1qsq]*JcC<$JcC<$JcC<$JcC<$YQ+LjrptmEJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcEdjrq$$X`;bDgJcC<$JcC<$JcC<$JcDqRqssaXLAui)JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$a8c/1qsq]*JcC<$JcC<$JcC<$JcC<$YQ+LjrptmEJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq$$X`;bDgJcC<$JcC<$JcC<$JcDqRqssaXLAui)JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/2qssaca8^_jJcC<$JcC<$JcC<$JcE%Urr2fc
+rq(sFJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq$$Xrr0t<JcC<$JcC<$JcC<$
+JcC<$ZN'q'qssaXLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/1qssaca8^_j
+JcC<$JcC<$JcC<$JcE%Urr2fcrptmEJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdj
+rq$$Xrr0t<JcC<$JcC<$JcC<$JcC<$ZN'q'qssaXLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$a8c/1qssaca8^_jJcC<$JcC<$JcC<$JcE%Urr2fcrptmEJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcEdjrq-*Yrr'n;JcC<$JcC<$JcC<$JcC<$ZN'q&qssaYLAui)JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/2qssaba8^_jJcC<$JcC<$JcC<$JcE%Urr)`brq(sF
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq$$Xrr'n;JcC<$JcC<$JcC<$JcC<$
+ZN'q&qssaXLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/1qssaba8^_jJcC<$
+JcC<$JcC<$JcE%Urr)`brptmEJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq-*Y
+rqsh:JcC<$JcC<$JcC<$JcC<$ZN'q%qssaYLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$a8c/2qssaaa8^_jJcC<$JcC<$JcC<$JcE%UrquZarq(sFJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcEdjrq-*Yrqsh:JcC<$JcC<$JcC<$JcC<$ZN'q%qssaYLAui)JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/2qssaaa8^_jJcC<$JcC<$JcC<$JcE%UrquZarq(sFJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq-*Yrqsh:JcC<$JcC<$JcC<$JcC<$ZN'q%
+qssaYLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/3qssa`a8^_jJcC<$JcC<$
+JcC<$JcE%UrqlT`rq2$GJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq60Zrqjb9
+JcC<$JcC<$JcC<$JcC<$ZN'q$qssaZLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+a8c/3qssa`a8^_jJcC<$JcC<$JcC<$JcE%UrqlT`rq2$GJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcEdjrq-*Yrqjb9JcC<$JcC<$JcC<$JcC<$ZN'q$qssaYLAui)JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$a8c/3qssa_a8^_jJcC<$JcC<$JcC<$JcE%UrqcN_rq2$GJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq60Zrqa\8JcC<$JcC<$JcC<$JcC<$ZN'q#qssaZ
+LAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/3qssa_a8^_jJcC<$JcC<$JcC<$
+JcE%UrqcN_rq2$GJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq60Zrqa\8JcC<$
+JcC<$JcC<$JcC<$ZN'q#qssaZLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/4
+qssa^a8^_jJcC<$JcC<$JcC<$JcE%UrqZH^rq;*HJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcEdjrq?6[rqXV7JcC<$JcC<$JcC<$JcC<$ZN'q"qssa[LAui)JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$a8c/4qssa^a8^_jJcC<$JcC<$JcC<$JcE%UrqZH^rq;*HJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrq?6[rqXV7JcC<$JcC<$JcC<$JcC<$ZN'q"qssa[LAui)
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/4qssa^a8^_jJcC<$JcC<$JcC<$JcE%U
+rqZH^rq;*HJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrqH<\rqOP6JcC<$JcC<$
+JcC<$JcC<$ZN'q!qssa\LAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/5qssa]
+a8^_jJcC<$JcC<$JcC<$JcE%UrqQB]rqD0IJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcEdjrqH<\rqOP6JcC<$JcC<$JcC<$JcC<$ZN'q!qssa\LAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$a8c/5qssa]a8^_jJcC<$JcC<$JcC<$JcE%UrqQB]rqD0IJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrqQB]rqFJ5JcC<$JcC<$JcC<$JcC<$ZN'puqssa]LAui)JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/6qssa\a8^_jJcC<$JcC<$JcC<$JcE%UrqH<\
+rqM6JJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrqZH^rqFJ5JcC<$JcC<$JcC<$
+JcC<$ZN'puqssa^LAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/7qssa\a8^_j
+JcC<$JcC<$JcC<$JcE%UrqH<\rqV<KJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdj
+rqZH^rqFJ5JcC<$JcC<$JcC<$JcC<$ZN'puqssa^LAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$a8c/8qssa[a8^_jJcC<$JcC<$JcC<$JcE%Urq?6[rq_BLJcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcEdjrqcN_rq=D4JcC<$JcC<$JcC<$JcC<$ZN'ptqssa_LAui)JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/8qssa[a8^_jJcC<$JcC<$JcC<$JcE%Urq?6[rq_BL
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrqcN_rq=D4JcC<$JcC<$JcC<$JcC<$
+ZN'ptqssa_LAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/8qssaZa8^_jJcC<$
+JcC<$JcC<$JcE%Urq60Zrq_BLJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrqlT`
+rq4>3JcC<$JcC<$JcC<$JcC<$ZN'psqssa`LAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$a8c/9qssaZa8^_jJcC<$JcC<$JcC<$JcE%Urq60ZrqhHMJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcEdjrquZarq4>3JcC<$JcC<$JcC<$JcC<$ZN'psqssaaLAui)JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/:qssaZa8^_jJcC<$JcC<$JcC<$JcE%Urq60ZrqqNNJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrr)`brq+82JcC<$JcC<$JcC<$JcC<$ZN'pr
+qssabLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$a8c/;qssaYa8^_jJcC<$JcC<$
+JcC<$JcE%Urq-*Yrr%TOJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcEdjrr)`brq+82
+JcC<$JcC<$JcC<$JcC<$ZN'prqssabLAui)JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+a8c/;qssaYa8^_jJcC<$JcC<$JcC<$JcE%Urq-*Yrr%TOJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcE[gqssaXa8^_jJcC<$JcC<$JcC<$JcE%Urq$$XKE$N&JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$`;f`*rq"21JcC<$JcC<$JcC<$JcC<$ZN'pqqsoC>JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcE[gqssaXa8^_jJcC<$JcC<$JcC<$JcE%Urq$$XKE$N&JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$`;f`*rq$-cb5[%mJcC<$JcC<$JcC<$JcE.Xrql]dqsoC>
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcE[gp%&+Trqt.CJcC<$JcC<$JcC<$JcC<$
+]Dqm/rq5sTKE$N&JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$`;fi5rq#gRrqHEkf)L=$
+JcC<$JcC<$JcC<$JcEIarqQKaq""FUrq_9IJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcEIarq??_q""FUrqb=JJcC<$JcC<$JcC<$JcC<$`;fi5rq-!Vrq$-_JcG]KJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcE@^rr)ihp%&+Srqt[RJcC<$JcC<$JcC<$JcC<$b5_J>rq5sTrq-3g
+JcGTHJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcE.XrqcWdp%&+Vrr2$ZJcC<$JcC<$
+JcC<$JcC<$c2[e<rq#pUrq$-cJcGBBJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcDqR
+rqHE`q""FUrqYdXJcC<$JcC<$JcC<$JcC<$e,TFErq-!Vrq$-_JcG0<JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcDhOrr)igrq#pUrq-3emf.k<JcC<$JcC<$JcC<$JcFF'rr)ihp%&+Srr%EJ
+li2P9JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$VZ6Ymrq#gRrq??io`'LBJcC<$JcC<$
+JcC<$JcFO*rqQKaq""FUrq_3Gjo9o3JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$T`>#c
+rq-!Vrq$-bp]#gEJcC<$JcC<$JcC<$JcFa0rql]eq""FUrq:pChuA9-JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$RfEB[rq#pUrq-3erVqHKJcC<$JcC<$JcC<$JcFs6rr)ihp%&+Srr%EJh#Ds*
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$QiI'_rq,mSrq-9i!WDtJs+C?&s+13$s+13$
+s+149s8MfmoD%nUoD\T;s474$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s,m?\q>U!\
+nc87^oCMtVJcCK)JcC<$JcC<$JcC<$nc/Ucrq-!Vrq$-_JcF*sJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcCZ.rq??_rUTmWrq$-cJcC]/JcC<$JcC<$JcC<$p](6krq5sTrq-3gJcF!pJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcCQ+rr)ig!:ojSrq69gJcCo5JcC<$JcC<$JcC<$
+qZ$Qirq#pUrq$-cJcEdjJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC?%!;Z`mqYp*Z
+o)AC_rdk*:s+13$s+13$s+13$rrE)uqu66_o)A7[p4<7[s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s8;orpAX[Yo)A7[qLS[9s+13$s+13$s+13)s8Mrtp%8=Xp%&+Srr%EJ^AicaJcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcGQGrr)ihp%&+Srqq?IU&T]DJcC<$JcC<$M?!SM
+rpp0]o(qqVoD\T;s1&)[s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+14As8Mloo_%eS
+p\t/Cs/5mJs+13$s+13$s,[3Zqu66`nc87[oD\H7s0DZUs+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+14;s8McloD%nUoD\Q:s/Q*Ms+13$s+13$s-<W`rVlK_ncACT!;-9hJcDqRJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$lMpk^rq-3]q""FVrqh9HYlB:SJcC<$JcC<$R/d0\
+rq#pUrq$-c!WW1Ns/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+142s8MopoC_\R
+pAY#As0hrYs+13$s+13$s.98iqu66_o)A7[pA+`>s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+14,s8Mclo_A"VoD\Q:s1//\s+13$s+13$s.o\orVlK_o)A:\rV$8Bs/Z0Ns+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+14&s8M]joD%nUo`"`=s1eSbs+13$s+13$s/5nrq#9m[
+o)A7[qXFN9s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+14#s8Mrqo_%eSp&=o@
+s2G"hs+13$s+13$s/l>#qu66_o)A7[p?M[/s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13rs8MinoD%nUoD\N9s2b4ks+13$s+13$s0Mb)rVlK_o)A:\rTF33s/Z0Ns+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13ls8M`koD%nUoD\T;s3CXqs+13$s+13$s0ht,q#9m[o)A7[
+qVhI*s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13is8Muro_%eSp&=l?s4%("
+s+13$s+13$s1JC2qu66_o)A7[p=oUus/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13cs8MlooC_\Rp\t/Cs4[L(s+13$s+13$s2+g8rVlK_o)A:\rRh.$s/Z0Ns+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13]s8M`koD%nUoD\T;s5!^+s+13$s+13$s2G$;q#9m[o)A7[qU5Cp
+s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Zs8Murp%@nTo`"c>s5X-1s+13$
+s+13$s3(HAqu66_o)A7[p<<Pfs/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13T
+s8Mloo_%eSp\t/Cs69Q7s+13$s+13$s3^lGrVlK_o)A:\rQ5(js/Z0Ns+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13Ns8McloD%nUoD\Q:s6Tc:s+13$s+13$s4%)Jq#9m[o)A7[qSW>as/Z0N
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Ks8Muro`"IWo)A:\qgne<s+13$s+13$
+s+14(s8Mopo_A"VoD\Hss+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s.]Pm
+qu63[o)A@^rIP"Ds+13$s+13$s+14.s8Murp%@nTo`"g#s+13Ns+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s.',gp\sg[o)A7[pjrJBs+13$s+13$s+141s8MfmoD%nUoD\Tns+13Ns+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s-E]ap&=RXo)A:\qgncus+13$s+13$s69R_
+qu66_o)A7[p9+FHs/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+136s8Mrqo_%eS
+p&=oFs+13$s+13$s+14=s8Murp%@nTo`"fis+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s,I'Xq>U!\o)A7[pko*&s+13$s+13$s763hq#9m[o)A7[qPF4Cs/Z0Ns+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13*s8M`koD%nUoD\TJs+13$s+13$s+14Fs8Mopo_A"VoD\HU
+s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+LFOrVlH^o)A=]r0IA6s+13$
+s+13$s8N&trVlK_o)A:\rLEn=s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s8N&tqYp*Zo)AC_rga">s+13$s+13$s8MfmoD%nUoD\TPs+13Ns+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+14Fs8M`koD%nUoD\TYs+13$s+13$s+gXRqu66_o)A7[p5o<*s/Z0Ns+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s7QEkrVlK_o)A:\r2'FEs+13$s+130s8Mur
+p%@nTo`"fKs+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+14=s8Mloo_%eS
+p\t/ms+13$s+13$s,d9[q#9m[o)A7[qM5*%s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s69R_p\sdZo)A7[q6'aKs+13$s+139s8Mopo_A"VoD\H7s+13Ns+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+144s8Muro`"IWo)A:\qm?BSs+13$s+13?s8Murp%@nTo`"f?
+s8N%Ls/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s5<qVqu63[o)A@^rOW#[
+s+13$s+13Bs8MfmoD%nUoD\T;s7lVFs/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s4[MPp\sg[o)A7[pq?]Ys+13$s+13Hs8Mopo_A"VoD\H7s762@s/Z0Ns+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s4%)Jp&=RXo)A:\qnrGbs+13$s+13Ns8Murp%@nTo`"f?s6ou=
+s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s3^lGr;Q?]o)A=]rQ5(js+13$
+s+13Qs8MfmoD%nUoD\T;s69Q7s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s3(HAq>U!\o)A7[prrbhs+13$s+13Ws8MopoD%nUoD\H7s5X-1s/Z0Ns+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s2G$;pAX[Yo)A7[qU5Cps+13$s+13]s8Murp%@nTo`"f?s5<p.s/Z0N
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s2+g8rVlH^o)A=]r7M%#s+13$s+13`
+s8MfmoD%nUoD\T;s4[L(s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s1JC2
+qYp*Zo)AC_rnd[+s+13$s+13fs8MopoD%nUoD\H7s4%("s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s0ht,pAX[Yo)A7[qVhI*s+13$s+13ls8Murp%@nTo`"f?s3^jts/Z0Ns+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s0Mb)rVlK_o)A:\r9+*2s+13$s+13os8Mfm
+oD%nUoD\T;s3(Fns/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s/l>#qYp-[
+o)AC_rpB`:s+13$s+13us8MopoD%nUoD\H7s2G"hs/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s/5nrp\sdZo)A7[q=+E8s+13$s+14&s8Murp%@nTo`"f?s2+ees/Z0Ns+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s.o\orVlHgoD%nUo`"a]s+13$s+13$s4dSQq#9m[
+o)A7[qLS[Zs+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13As8MopoC_\R
+pAY$gs+13$s+13$s5F"Wqu63^o)A7[p4<7Ps+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13;s8Mclo_A"VoD\Lcs8RZMJcC<$JcFp5rr)ihp%&+Srr%EJZi>UVX8dbNJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$P5kOSrq#pU!VH!ao`"`=s+UK(s+148s8MfmoD%nU
+oD\T;s/l<Ps/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s,[3Zr;Q?ao)8.Y
+p&=o@s,6o.s+14>s8MopoD%nUoD\H7s/5mJs/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s,$dTq>Tsdo()YJrq$-aJcCc1JcC<$pAb-jrq5sTrq-3gJcDPGJcDeNJcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcCB&!VZ3epAX[Yo)A7[qLS[2s+13$s7u]oq#9m[o)A7[
+qLS[<s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$rrE)urVlH^o)A=]
+r.4m:s+13$rrN0"rql]dq""FUrq:pCR/_a;X8dbNJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcGTHrqcWcp%&+Vrr.KKT`9TCL&_/N!;-Bcp%@nTo`"f?s-<V8s/Z0Ns+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+14Bs8M`koD%nUoD\T;s.fUFs+p^Sq#9jbo(hkUoD\T;
+s,[22s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+14?s8Murp%@nTo`"c>
+s/H$Ls,R-YqYp*_ncA=Prq$-_JcCT,JcDeNJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$li6t\rq,mSrqHEkJcDqRJcCu7rr)ihp$r+T!VH$`rIP!'s+13Ns+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s5j:[p\sdZo)A7[q18ROs+13:s8MfmoD%nUoD\Rds+13$
+s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s5O(XrVlHgoD%nUo`"`=
+s1&)[s.02hqYp*]o)A7[pA4f?s+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+14*s8MopoC_\RpAY#As1\Mas.fVnrVlK_o)A:\rV->Cs+13$s/Z0Ns+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+14$s8Mclo_A"VoD\N9s2"_ds/,hqq#9m[o)A7[qXOT:s+13$
+s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13ss8M]joD%nUo`"`=s2Y.j
+s/c8"qYp*]o)A7[p?Va0s+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13ps8Mrqo_%eSp&=o@s3:Rps0D\(rVlK_o)A:\rTO94s+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13js8MinoD%nUoD\N9s3Udss0_n+q#9m[o)A7[qVqO+s+13$s/Z0N
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13ds8M`koD%nUoD\T;s474$s1A=1
+qYp*]o)A7[p>#\!s+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13a
+s8Muro_%eSp&=l?s4mX*s2"a7rVlK_o)A:\rRq4%s+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13[s8MlooC_\Rp\t/Cs5O'0s2=s:q#9m[o)A7[qU>Iqs+13$s/Z0Ns+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Us8M`koD%nUoD\T;s5j93s2tB@qYp*]
+o)A7[p<EVgs+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Rs8Mur
+p%@nTo`"c>s6K]9s3UfFrVlK_o)A:\rQ>.ks+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13Ls8Mloo_%eSp\t/Cs7-,?s3q#Iq#9m[o)A7[qS`Dbs+13$s/Z0Ns+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Fs8McloD%nUoD\Q:s7H>Bs4RGOqYp*]o)A7[
+p:gQXs+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Cs8Muro`"IW
+o)A:\qgneDs+14-s8Murp%@nTo`"g$s+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s-iuequ63[o)A@^rIOtKs+140s8MfmoD%nUoD\Tos+13$s+13Ns+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s-3Q_p\sg[o)A7[pk/Tts60L^qYp*]o)A7[p94LI
+s+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+131s8M]joD%nUo`"`E
+s+14<s8Murp%@nTo`"fjs+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s,6pVr;Q?]o)A=]rK$u0s7--gq#9m[o)A7[qPO:Ds+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13(s8MinoD%nUoD\NJs+14Es8MlooD%nUoD\HVs+13$s+13Ns+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+11Ns8W)lrq#pUrq$-cR/_a;rVulq
+rq5sTrq-3gSc=9@JcC<$X8dbNJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+r;Zcprq,mSrq69gT)XBA!<<&nrq#pUrq$-cQiDX:JcC<$X8dbNJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$pAb-grq#gRrqHEkV#Q2LrqcWcq""FUrq;KSJcC<$JcDeNJcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcG6>rq??_q""FUrq`PmN;rnUrq5sTrq-3g
+NrO\1JcC<$X8dbNJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$mJm1arq5sT
+rq-3fXoFI^rqQKaq""FUrq_HNJcC<$JcDeNJcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcFp5rqcWdp%&+Vrr08(Q2gj[rq#pUrq$-_K)^E%JcC<$X8dbNJcC<$JcC<$JcC<$JcC<$
+JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$JcC<$iW&oOrq#pUrq$-b[f;isrr)ihp%&+Srr%EJ!WW1Ns+13$
+s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s5*eTrr2QhoD%nUo`"a#
+s.98iq#9m[o)A7[qLS\Bs+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+14&s8MopoC_\RpAY$-s.o\oqYp*]o)A7[p4<88s+13$s+13Ns+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13us8Mclo_A"VoD\O(s/Q+urVlK_o)A:\rIP"<s+13$s+13N
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13os8M]joD%nUo`"a2s/l>#
+q#9m[o)A7[qLS\3s+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13ls8Mrqo_%eSp&=p;s0Mb)qYp*]o)A7[p4<8)s+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13fs8MinoD%nUoD\O7s1/1/rVlK_o)A:\rIP"-s+13$s+13Ns+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13`s8M`koD%nUoD\U?s1JC2q#9m[
+o)A7[qLS\$s+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13]
+s8Muro_%eSp&=mIs2+g8qYp*]o)A7[p4<7os+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13Ws8MlooC_\Rp\t0Ss2b6>rVlK_o)A:\rIP!ss+13$s+13Ns+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Qs8M`koD%nUoD\UNs3(HAq#9m[o)A7[
+qLS[js+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Ns8Mur
+p%@nTo`"dWs3^lGqYp*]o)A7[p4<7`s+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13Hs8Mloo_%eSp\t0bs4@;MrVlK_o)A:\rIP!ds+13$s+13Ns+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13Bs8McloD%nUoD\R\s4[MPq#9m[o)A7[qLS[[
+s+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13?s8N#so`"IW
+o)A:\qu6WRs8MlooD%nUoD\H7s0r#Zs+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s-E]aqu63[o)A@^rTX@]rVlK_o)A:\rIP!Us+13$s+13Ns+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+133s8Mclo_A"VoD\ORs8MfmoD%nUoD\T;s/uBQs+13$
+s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s,-jUp&=R^o)&"Wo`"ab
+s8MlooD%nUoD\H7s/>sKs+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+gXRr;Q?]o)&+Qo)A:\rIP!Fs+13$s+13Ns+13$s+13$s+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s8MinoC)8LoD\T;s.B=Bs+13$s/Z0Ns+13$s+13$s+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+14Is8M`koDA+XoD\H7s-`n<s+13$s/Z0Ns+13$s+13$s+13$s+13$
+s+13$s+13$s+13$s+13$s+13$s+13$s+13$s+14Fs8Muoo`"f?s-E\9s+13$s/Z0M
+~> %APLeod
+EI
+Q
+0.39607844 0 0.78823531 sc
+q
+128.56999 149.5 m
+6.430007 149.5 l
+8.5399866 42.946022 l
+68.015747 8.9598703 l
+126.46037 42.964012 l
+128.56999 149.5 l
+h
+121.429 142.5 m
+119.539 47.036999 l
+67.983002 17.041 l
+15.46 47.054001 l
+13.57 142.5 l
+121.429 142.5 l
+h
+W*
+0 0 135 156 rc
+1.430007 154.5 m
+133.56999 154.5 l
+133.56999 3.9598708 l
+1.430007 3.9598708 l
+h
+f
+Q
+0 0 0 sc
+q
+79.787476 122.99168 m
+81.964188 121.90332 83.142197 119.61252 82.918968 117.32687 c
+84.163254 117.13079 85.333717 116.48402 86.171303 115.43704 c
+86.228088 115.36606 86.282738 115.29339 86.335175 115.21914 c
+87.785561 113.16521 87.296303 110.3244 85.242378 108.87402 c
+84.909271 108.63879 84.58078 108.40931 84.256874 108.18557 c
+84.256874 108.18557 l
+83.298943 107.53156 l
+82.368492 106.91199 l
+81.465439 106.32684 l
+78.797295 104.62299 76.497917 103.38361 74.557083 102.60728 c
+71.564369 101.41019 67.936172 100.45826 63.668304 99.745316 c
+63.668304 99.745316 l
+63.558487 99.727997 l
+63.566227 99.454178 l
+63.586487 98.412254 63.557838 97.42704 63.479637 96.499611 c
+78.249603 96.5 l
+81.653336 96.5 84.983192 95.507401 87.831383 93.643753 c
+93.014771 90.252129 95.935066 85.724129 96.492554 80.149254 c
+96.646042 78.614372 96.650162 77.140709 96.505684 75.730103 c
+101.78786 76.484924 l
+103.48492 74.787865 l
+102.7765 69.828865 101.32737 66.206047 99.060661 63.939339 c
+96.744774 61.623455 93.482391 61.419983 89.499847 63.115685 c
+89.5 61 l
+89.5 56.390934 85.831551 52.63868 81.255157 52.503757 c
+81 52.5 l
+62 52.5 l
+60.5 54 l
+60.5 55.762154 61.107719 57.382366 62.125004 58.662491 c
+60.71278 59.465298 59.318295 60.560387 57.939339 61.939339 c
+57.093113 62.785568 56.303627 63.687752 55.571003 64.6455 c
+55.499489 64.740997 l
+55.5 59 l
+55.5 55.48819 52.715004 52.62685 49.233135 52.504105 c
+49 52.5 l
+41 52.5 l
+39.510056 53.826603 l
+39.253002 56.035408 39.699306 57.820625 40.939339 59.060661 c
+41.849552 59.970871 43.259506 60.644077 45.184551 61.137424 c
+45.499489 61.215 l
+45.5 73.373306 l
+45.5 75.421036 45.160034 77.453354 44.495087 79.387619 c
+44.32209 79.869095 l
+42.811783 83.89637 l
+37.770477 83.856522 33.360123 84.817314 31.762039 87.152977 c
+29.716648 90.142387 31.276047 94.994713 34.634254 99.692268 c
+34.634254 99.692268 l
+35.045757 100.2551 l
+36.165508 101.75333 37.462059 103.22743 38.876236 104.61131 c
+38.876236 104.61131 l
+39.411949 105.12591 l
+39.957996 105.63127 l
+40.049824 105.71468 40.142056 105.79768 40.234676 105.88025 c
+40.234676 105.88025 l
+40.794922 106.37031 l
+41.171364 106.69337 41.553539 107.009 41.940525 107.31614 c
+41.940525 107.31614 l
+42.52449 107.77036 l
+42.720268 107.91956 42.917137 108.06651 43.114975 108.21109 c
+47.12413 111.14085 51.75528 111.59517 56.85622 109.64012 c
+57.261105 109.86524 l
+58.211864 110.40616 l
+59.123749 110.9339 l
+59.996696 111.4484 l
+60.830647 111.94958 l
+61.625538 112.43738 l
+62.381306 112.91171 l
+62.504005 112.98964 62.625069 113.067 62.744503 113.1438 c
+63.441475 113.59779 l
+63.554363 113.67233 63.665619 113.74628 63.775234 113.81968 c
+64.413269 114.25317 l
+64.619385 114.39538 64.818947 114.53529 65.011932 114.6729 c
+65.571167 115.0788 l
+66.090904 115.47079 l
+66.257561 115.59913 66.417625 115.72514 66.571083 115.8488 c
+67.01165 116.21275 l
+67.292145 116.45069 67.546188 116.6792 67.773689 116.8982 c
+68.419838 117.53548 l
+69.224167 118.31005 l
+69.816185 118.86806 l
+70.788033 119.76765 l
+71.491882 120.4092 l
+72.631721 121.43437 l
+73.447731 122.15982 l
+75.193192 123.70492 77.702492 124.03417 79.787476 122.99168 c
+h
+78.249603 93.5 m
+63.004642 93.499794 l
+62.183846 90.156792 60.46574 87.866425 57.801422 86.709175 c
+57.801422 86.709175 l
+57.557087 86.607285 l
+56.498302 86.183769 55.339363 85.801315 54.116638 85.466171 c
+54.116638 85.466171 l
+53.375645 85.270805 l
+53.375645 85.270805 l
+52.99995 85.177475 l
+52.239265 84.999695 l
+52.111526 84.971069 51.98333 84.942947 51.85471 84.915329 c
+51.85471 84.915329 l
+51.078266 84.755821 l
+50.817966 84.704727 50.556282 84.655724 50.293499 84.608864 c
+50.293499 84.608864 l
+49.502151 84.474754 l
+48.328983 84.286255 47.139992 84.140808 45.960514 84.04277 c
+47.131077 80.922462 l
+47.971653 78.680931 48.431507 76.315987 48.492912 73.925392 c
+48.5 73.373306 l
+48.5 60 l
+47.274849 58.525394 l
+45.087933 58.117779 43.673214 57.551891 43.060661 56.939339 c
+42.777172 56.655849 42.58316 56.257801 42.494129 55.724346 c
+42.464489 55.500999 l
+49 55.5 l
+50.868565 55.5 52.395126 56.964279 52.49482 58.807964 c
+52.5 59 l
+52.5 70 l
+55.34164 70.670822 l
+56.603813 68.146469 58.176231 65.945091 60.060661 64.060661 c
+61.631298 62.490021 63.174492 61.383202 64.684235 60.726631 c
+65.615158 61.188831 66.656265 61.46114 67.757271 61.496147 c
+68 61.5 l
+72.380486 61.500999 l
+72.214691 61.606899 l
+68.541145 64.018929 66.598488 67.38401 66.503647 71.668602 c
+66.5 72 l
+66.5 78.77282 71.026192 82.648842 79.476456 83.459084 c
+79.875435 83.49482 l
+80.124565 80.50518 l
+72.831261 79.897408 69.5 77.121353 69.5 72 c
+69.5 66.868553 72.849228 63.427696 79.971565 61.555763 c
+80.3638 61.455215 l
+80 58.5 l
+68 58.5 l
+66.082787 58.5 64.445602 57.301037 63.797337 55.612 c
+63.756489 55.500999 l
+81 55.5 l
+83.963478 55.5 86.379539 57.843781 86.495636 60.778793 c
+86.5 61 l
+86.5 64 l
+87.099998 65.199997 l
+92.012634 68.884476 94.121941 73.70575 93.507446 79.850746 c
+93.043343 84.491745 90.637032 88.222794 86.188797 91.133392 c
+83.946854 92.600349 81.344742 93.415955 78.672134 93.493843 c
+78.249603 93.5 l
+h
+100.17049 73.223999 m
+95.916786 72.615654 l
+95.164864 69.95018 93.803398 67.550064 91.838867 65.430527 c
+94.151909 64.672836 95.805367 64.926689 96.939339 66.060661 c
+98.363113 67.484436 99.438889 69.792503 100.12405 72.995903 c
+100.17049 73.223999 l
+h
+83.828697 113.56296 m
+83.146835 114.41528 81.945045 114.64251 80.999077 114.09797 c
+80.999077 114.09797 l
+79.067863 112.99748 l
+77.708961 112.23836 l
+76.845558 111.76379 l
+76.016136 111.31441 l
+74.835587 110.68755 l
+73.731216 110.11729 l
+73.037209 109.76852 l
+72.376938 109.44485 l
+71.750359 109.14629 l
+71.157425 108.87282 l
+70.598091 108.6244 l
+67.62722 107.33271 63.847607 106.30191 59.251186 105.52118 c
+59.251186 105.52118 l
+58.288765 105.67934 l
+53.009483 108.52246 48.625671 108.52246 44.885025 105.78891 c
+44.085697 105.20479 43.303112 104.57221 42.546955 103.90539 c
+42.546955 103.90539 l
+41.984943 103.39907 l
+41.799358 103.22831 41.615578 103.05563 41.43375 102.88125 c
+41.43375 102.88125 l
+40.894287 102.35325 l
+35.916836 97.381905 32.590435 91.254944 34.237961 88.847023 c
+35.323112 87.261032 39.502445 86.719139 44.239082 86.975609 c
+44.239082 86.975609 l
+45.011669 87.024162 l
+46.43557 87.125854 47.896606 87.296936 49.328117 87.530952 c
+49.328117 87.530952 l
+50.105614 87.664795 l
+50.874851 87.810898 l
+51.002235 87.83625 51.129177 87.862114 51.255623 87.888466 c
+51.255623 87.888466 l
+52.007961 88.052498 l
+53.62344 88.420631 55.138435 88.870926 56.442913 89.392715 c
+59.493763 90.613052 60.922161 94.326881 60.503036 100.90462 c
+60.503036 100.90462 l
+61.778019 102.48348 l
+66.463959 103.18467 70.354187 104.15723 73.442917 105.39272 c
+74.912376 105.9805 76.654602 106.88779 78.663689 108.11374 c
+78.663689 108.11374 l
+79.481544 108.62111 l
+80.174927 109.05808 80.897865 109.53044 81.650162 110.03817 c
+81.650162 110.03817 l
+82.566978 110.66442 l
+83.511879 111.3246 l
+84.212387 111.81927 84.37925 112.78814 83.884583 113.48864 c
+83.884583 113.48864 l
+h
+43 101 m
+44.104568 101 45 100.10457 45 99 c
+45 97.895432 44.104568 97 43 97 c
+41.895432 97 41 97.895432 41 99 c
+41 100.10457 41.895432 101 43 101 c
+h
+75.436226 119.91351 m
+74.251114 118.85765 l
+73.517235 118.19601 l
+72.828369 117.56825 l
+71.879547 116.69024 l
+71.303391 116.14739 l
+70.772392 115.63859 l
+70.060661 114.93934 l
+69.817749 114.69643 69.549149 114.44564 69.254776 114.18689 c
+68.793877 113.79277 l
+68.313629 113.39264 67.775307 112.97447 67.178619 112.53793 c
+66.562477 112.09524 l
+66.456543 112.02043 66.348976 111.94511 66.239792 111.86928 c
+65.565178 111.40808 l
+65.449486 111.33018 65.332169 111.25175 65.213219 111.17282 c
+64.479988 110.69293 l
+63.707603 110.2005 l
+62.896 109.69545 l
+62.045124 109.1777 l
+61.881882 109.07966 l
+64.654121 109.67824 67.02343 110.3861 68.987061 111.19955 c
+68.987061 111.19955 l
+69.401909 111.3756 l
+69.48774 111.41293 69.57502 111.45129 69.663742 111.49072 c
+69.663742 111.49072 l
+70.213463 111.73993 l
+70.797867 112.01442 l
+71.416916 112.31417 l
+72.070557 112.63918 l
+72.758751 112.98943 l
+73.481445 113.3649 l
+74.238594 113.76557 l
+75.43882 114.4138 l
+76.281898 114.87741 l
+77.610802 115.61997 l
+78.53952 116.14642 l
+79.502403 116.69797 l
+79.576637 116.7407 79.651535 116.78141 79.727028 116.82012 c
+79.658356 116.67082 l
+80.328018 118.01014 79.785149 119.63873 78.445831 120.3084 c
+77.456039 120.80329 76.264816 120.64699 75.436226 119.91351 c
+h
+W
+0 0 135 156 rc
+25.845222 128.59473 m
+108.48492 128.59473 l
+108.48492 47.5 l
+25.845222 47.5 l
+h
+f
+ep
+end
+%%Trailer
+%%EOF
